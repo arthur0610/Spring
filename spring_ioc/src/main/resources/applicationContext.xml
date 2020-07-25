@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!--    Three way to build a bean object-->
+    <!--    <bean id="userDao" class="edu.zxie0018.dao.impl.UserDaoImpl" scope="singleton" init-method="init" destroy-method="destory"></bean>-->
+
+    <!--    <bean id="userDao" class="edu.zxie0018.factory.StaticFactory" factory-method="getUserDao"></bean>-->
+
+    <!--    <bean id="factory" class="edu.zxie0018.factory.DynamicFactory"></bean>-->
+    <!--    <bean id="userDao" factory-bean="factory" factory-method="getUserDao"></bean>-->
+
+
+
+<!--    dependency injection three way-->
+    <!--    constructor-->
+    <!--    <bean id="userDao" class="edu.zxie0018.dao.impl.UserDaoImpl"></bean>-->
+    <!--    <bean id="userService" class="edu.zxie0018.service.impl.UserServiceImpl">-->
+    <!--        <constructor-arg name="userDao" ref="userDao"></constructor-arg>-->
+    <!--    </bean>-->
+
+    <!--    set method -->
+    <!--    <bean id="userDao" class="edu.zxie0018.dao.impl.UserDaoImpl"></bean>-->
+    <!--    <bean id="userService" class="edu.zxie0018.service.impl.UserServiceImpl" p:userDao-ref="userDao"></bean>-->
+
+    <!--    p namesapces-->
+    <!--    <bean id="userDao" class="edu.zxie0018.dao.impl.UserDaoImpl"></bean>-->
+    <!--    <bean id="userService" class="edu.zxie0018.service.impl.UserServiceImpl">-->
+    <!--        <property name="userDao" ref="userDao"></property>-->
+    <!--    </bean>-->
+
+
+    <!--    <bean id="userDao" class="edu.zxie0018.dao.impl.UserDaoImpl">-->
+    <!--        <property name="username" value="kk"/>-->
+    <!--        <property name="age" value="18"/>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="userDao" class="edu.zxie0018.dao.impl.UserDaoImpl">-->
+    <!--        <property name="strList">-->
+    <!--            <list>-->
+    <!--                <value>kk</value>-->
+    <!--                <value>kkk</value>-->
+    <!--                <value>kkkk</value>-->
+    <!--            </list>-->
+    <!--        </property>-->
+    <!--        <property name="userMap">-->
+    <!--            <map>-->
+    <!--                <entry key="user1" value-ref="user1"></entry>-->
+    <!--                <entry key="user2" value-ref="user2"></entry>-->
+    <!--            </map>-->
+    <!--        </property>-->
+    <!--        <property name="properties">-->
+    <!--            <props>-->
+    <!--                <prop key="p1">p1</prop>-->
+    <!--                <prop key="p2">pp22</prop>-->
+    <!--                <prop key="p3">ppp333</prop>-->
+    <!--            </props>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="user1" class="edu.zxie0018.domain.User">-->
+    <!--        <property name="username" value="kk"></property>-->
+    <!--        <property name="addr" value="kk'address"></property>-->
+    <!--    </bean>-->
+    <!--    <bean id="user2" class="edu.zxie0018.domain.User">-->
+    <!--        <property name="username" value="kkk"></property>-->
+    <!--        <property name="addr" value="kkk'address"></property>-->
+    <!--    </bean>-->
+
+
+    <!--    <import resource="applicationContext-user.xml"></import>-->
+    <!--    <import resource="applicationContext-product.xml"></import>-->
+</beans>
