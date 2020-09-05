@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<web-app version="3.1">
+
+  <listener>
+    <listener-class>edu.zxie0018.listener.ContextLoaderListener</listener-class>
+  </listener>
+  <servlet>
+    <servlet-name>UserServlet</servlet-name>
+    <servlet-class>edu.zxie0018.servlet.UserServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>UserServlet</servlet-name>
+    <url-pattern>/userServlet</url-pattern>
+  </servlet-mapping>
+
+</web-app>

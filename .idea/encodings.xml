@@ -7,5 +7,7 @@
     <file url="file://$PROJECT_DIR$/spring_aop_anno/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_ioc/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring_ioc/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_mvc/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring_mvc/src/main/resources" charset="UTF-8" />
   </component>
 </project>
