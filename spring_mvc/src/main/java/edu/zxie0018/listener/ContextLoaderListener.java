@@ -10,8 +10,15 @@ import javax.servlet.ServletContextListener;
 public class ContextLoaderListener implements ServletContextListener {
     @Override
     public void contextInitialized(ServletContextEvent servletContextEvent) {
-        ApplicationContext app = new ClassPathXmlApplicationContext("applicationContext.xml");
+
         ServletContext servletContext = servletContextEvent.getServletContext();
+        // read contextConfigLocation from web.xml
+        // get the value from context-param key-value pair from web.xml
+        String contextConfigLocation = servletContext.getInitParameter("contextConfigLocation");
+
+        // create Spring ApplicationContext object
+        ApplicationContext app = new ClassPathXmlApplicationContext(contextConfigLocation);
+        // store object into servletContext as an attribute
         servletContext.setAttribute("app", app);
     }
 
