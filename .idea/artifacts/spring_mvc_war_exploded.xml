@@ -22,6 +22,7 @@
           <element id="library" level="project" name="Maven: org.springframework:spring-expression:5.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-test:5.0.5.RELEASE" />
           <element id="library" level="project" name="Maven: org.springframework:spring-web:5.0.5.RELEASE" />
+          <element id="library" level="project" name="Maven: org.springframework:spring-webmvc:5.0.5.RELEASE" />
         </element>
       </element>
       <element id="directory" name="META-INF">
